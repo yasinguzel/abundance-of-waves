@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour {
-	public float speed = 5f;
+	public float speed = 19f;
 	public float destoryTime = 9f;
 	// Use this for initialization
 	void Start () {

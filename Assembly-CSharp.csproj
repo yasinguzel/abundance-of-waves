@@ -48,9 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CheckCollision.cs" />
      <Compile Include="Assets\Scripts\CollectHealth.cs" />
-     <Compile Include="Assets\Scripts\HealthBoxSpawner.cs" />
      <Compile Include="Assets\Scripts\HumanPlayer.cs" />
      <Compile Include="Assets\Scripts\Monster.cs" />
+     <Compile Include="Assets\Scripts\MoveBox.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\PlayerShooter.cs" />
