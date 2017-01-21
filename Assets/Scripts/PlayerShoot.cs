@@ -8,6 +8,8 @@ public class PlayerShoot : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Destroy (gameObject, destoryTime);
+		AudioSource audio = GetComponent<AudioSource>();
+		audio.Play();
 	}
 	
 	// Update is called once per frame

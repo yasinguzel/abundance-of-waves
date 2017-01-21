@@ -6,37 +6,30 @@ public class Wave : MonoBehaviour {
   public  Vector3 beginPos;
   public  Vector3 endPos;
   public float speed = 2;
-  public GameObject healthBox;
-  Animator anim;
-  SpriteRenderer render;
+  public GameObject healthBox;	
+	public bool isUp = false;
 
 	// Use this for initialization
 	void Start () {
-		render = GetComponent<SpriteRenderer>();
-	    anim = GetComponent<Animator>();
-	    anim.SetTrigger("dalga");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-
-    if (this.transform.position.y < endPos.y)
-    {
-        this.transform.Translate(Vector3.up*Time.deltaTime*speed);
-		
-    }
-    else
-    {
-
-		this.transform.position = beginPos;
-		anim.SetTrigger("dalga");
-		for (int i = 0; i <= 6; i++) {
-			float random = Random.Range (-6, 6);
-			Debug.Log (random);
-			Instantiate (healthBox, new Vector3(random,transform.position.y,transform.position.z), transform.rotation);	
+		if (isUp) {
+			if (this.transform.position.y < endPos.y) {
+				this.transform.Translate (Vector3.up * Time.deltaTime * speed);
+			} else {
+				isUp = false;
+			}
+		} else {
+			if (this.transform.position.y > beginPos.y) {
+				this.transform.Translate (Vector3.down * Time.deltaTime * speed);
+			} else {
+				isUp = true;
+			}
 		}
 
     }
-	}
+
 }

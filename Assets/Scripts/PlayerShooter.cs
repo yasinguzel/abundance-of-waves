@@ -23,6 +23,7 @@ public class PlayerShooter : MonoBehaviour {
 			Vector3 spawnPos = playerPos + playerDirection*spawnDistance;
 
 			Instantiate(bullet, spawnPos, playerRotation );
+
 		}
 
 
