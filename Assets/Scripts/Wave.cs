@@ -32,7 +32,9 @@ public class Wave : MonoBehaviour {
 		this.transform.position = beginPos;
 		anim.SetTrigger("dalga");
 		for (int i = 0; i <= 6; i++) {
-			Instantiate (healthBox, new Vector3(Random.Range(-9.33f,9.33f),transform.position.y,transform.position.z), transform.rotation);	
+			float random = Random.Range (-6, 6);
+			Debug.Log (random);
+			Instantiate (healthBox, new Vector3(random,transform.position.y,transform.position.z), transform.rotation);	
 		}
 
     }
