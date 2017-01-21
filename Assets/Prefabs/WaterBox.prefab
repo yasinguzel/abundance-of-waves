@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 50104851606693610}
   m_Layer: 0
   m_Name: WaterBox
-  m_TagString: FoodBox
+  m_TagString: WaterBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

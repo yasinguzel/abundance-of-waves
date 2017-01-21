@@ -7,6 +7,7 @@ public class PlayerShooter : MonoBehaviour {
 	public PlayerShoot bullet;
 	public Transform barrel;
 	public float spawnDistance = 20;
+	public float Bullet = 100;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,13 +20,11 @@ public class PlayerShooter : MonoBehaviour {
 			Vector3 playerDirection = barrel.transform.forward;
 			Quaternion playerRotation = barrel.transform.rotation;
 
-
-			Vector3 spawnPos = playerPos + playerDirection*spawnDistance;
-
-			Instantiate(bullet, spawnPos, playerRotation );
-
+			if (Bullet!=0) {
+				Vector3 spawnPos = playerPos + playerDirection*spawnDistance;
+				Bullet--;
+				Instantiate(bullet, spawnPos, playerRotation );
+			}
 		}
-
-
 	}
 }

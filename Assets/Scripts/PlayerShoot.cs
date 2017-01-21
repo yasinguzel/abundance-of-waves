@@ -18,10 +18,10 @@ public class PlayerShoot : MonoBehaviour {
 		transform.Translate (Vector2.right * Time.deltaTime * speed);
 	}
 
-	void OnCollisionEnter2D(Collision2D coll){
+	void OnTriggerEnter2D(Collider2D coll){
 	
-		if (coll.gameObject.tag == "enemy") {
-			Debug.Log ("Enemy Shootted");
+		if (coll.gameObject.tag == "BugBox") {
+			Destroy (gameObject, 0);
 		}
 	}
 }
