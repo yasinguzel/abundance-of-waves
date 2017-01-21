@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HealthBoxSpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FollowPlayer.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerShoot.cs" Line="19" Column="38" />
-      <File FileName="Assets/Scripts/MoveBox.cs" Line="22" Column="62" />
-      <File FileName="Assets/Scripts/Wave.cs" Line="16" Column="30" />
-      <File FileName="Assets/Scripts/HealthBoxSpawner.cs" Line="17" Column="90" />
+      <File FileName="Assets/Scripts/CheckBullet.cs" Line="8" Column="32" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="14" Column="35" />
+      <File FileName="Assets/Scripts/CheckCollision.cs" Line="17" Column="31" />
+      <File FileName="Assets/Scripts/Wave.cs" Line="6" Column="29" />
+      <File FileName="Assets/Scripts/FollowPlayer.cs" Line="10" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

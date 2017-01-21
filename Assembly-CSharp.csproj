@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\CheckCollision.cs" />
      <Compile Include="Assets\Scripts\CollectHealth.cs" />
      <Compile Include="Assets\Scripts\Destroy.cs" />
+     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\HumanPlayer.cs" />
      <Compile Include="Assets\Scripts\Monster.cs" />
      <Compile Include="Assets\Scripts\MoveBox.cs" />
