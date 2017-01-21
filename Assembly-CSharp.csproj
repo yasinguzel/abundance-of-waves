@@ -46,8 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CollisionMermi.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\CheckCollision.cs" />
+     <Compile Include="Assets\Scripts\CollectHealth.cs" />
+     <Compile Include="Assets\Scripts\HealthBoxSpawner.cs" />
      <Compile Include="Assets\Scripts\HumanPlayer.cs" />
      <Compile Include="Assets\Scripts\Monster.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
