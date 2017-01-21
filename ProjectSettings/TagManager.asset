@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HealthBox
   - Barrel
+  - FoodBox
   layers:
   - Default
   - TransparentFX

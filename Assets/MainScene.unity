@@ -257,7 +257,13 @@ MonoBehaviour:
   beginPos: {x: 0, y: -6, z: 0}
   endPos: {x: 0, y: -2.87, z: 0}
   speed: 1
-  healthBox: {fileID: 1619865120866910, guid: c47310498e3204a24a0484b1f31d4df3, type: 2}
+  spawn:
+  - {fileID: 1423414585112526, guid: 6983b3806e4fc44c3bc28195beec3bf3, type: 2}
+  - {fileID: 1220361532159870, guid: 12409ae1af006436e9273253ba0467ef, type: 2}
+  - {fileID: 1619865120866910, guid: c47310498e3204a24a0484b1f31d4df3, type: 2}
+  - {fileID: 1702622470146550, guid: 2a3c8c133872342c886ca481cbfa1963, type: 2}
+  - {fileID: 1044935631149884, guid: 9280957c921eb4e358dee384c33f67c0, type: 2}
+  boxCount: 6
   isUp: 0
 --- !u!1 &1002612822
 GameObject:
@@ -354,7 +360,8 @@ MonoBehaviour:
   beginPos: {x: 0, y: -3.36, z: 0}
   endPos: {x: 0, y: -3.06, z: 0}
   speed: 0.1
-  healthBox: {fileID: 0}
+  spawn: []
+  boxCount: 6
   isUp: 0
 --- !u!212 &1294349063
 SpriteRenderer:
@@ -506,7 +513,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591371516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
