@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerShooter : MonoBehaviour {
 
-	public PlayerShoot we;
-	public Transform namlu;
+	public PlayerShoot bullet;
+	public Transform barrel;
+	public float spawnDistance = 20;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,7 +15,14 @@ public class PlayerShooter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetMouseButtonDown(0)){
-			Instantiate (we, namlu.transform.position, namlu.transform.rotation);
+			Vector3 playerPos = barrel.transform.position;
+			Vector3 playerDirection = barrel.transform.forward;
+			Quaternion playerRotation = barrel.transform.rotation;
+
+
+			Vector3 spawnPos = playerPos + playerDirection*spawnDistance;
+
+			Instantiate(bullet, spawnPos, playerRotation );
 		}
 
 
