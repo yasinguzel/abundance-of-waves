@@ -27,9 +27,21 @@ public class Wave : MonoBehaviour {
 				this.transform.Translate (Vector3.down * Time.deltaTime * speed);
 			} else {
 				isUp = true;
+				makeBox();
 			}
 		}
 
     }
 
+	void makeBox(){
+		int[] array={-8,-5,-2,1,4,7}; //Gün sayısı değiştikçe eleman sayısı artacak(Geçerli değerlerden)
+
+		for (int i = 0; i < 6; i++) {
+				Instantiate (healthBox, new Vector3 (array [Random.Range (0, 6)], transform.position.y, transform.position.z), transform.rotation);
+			}
+		}
+
+
 }
+
+

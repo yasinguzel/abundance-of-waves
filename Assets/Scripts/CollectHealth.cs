@@ -20,7 +20,7 @@ public class CollectHealth : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "Player") {
 			Destroy (gameObject, 0);
-			//Instantiate (health, transform.position, transform.rotation);
+			Instantiate (colloctedObject, transform.position, transform.rotation);
 
 		}
 	}

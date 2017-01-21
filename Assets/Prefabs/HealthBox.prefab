@@ -70,7 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beginPos: {x: 0, y: -6.5, z: 0}
   endPos: {x: 0, y: -1.9, z: 0}
-  speed: 0.7
+  speed: 1
 --- !u!114 &114760868540152596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,7 +83,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 9
-  health: {fileID: 1106078243532340, guid: 8f9e9b79ad3984700bb4bee3693c0a6d, type: 2}
+  colloctedObject: {fileID: 1106078243532340, guid: 8f9e9b79ad3984700bb4bee3693c0a6d,
+    type: 2}
 --- !u!212 &212269161591830390
 SpriteRenderer:
   m_ObjectHideFlags: 1
