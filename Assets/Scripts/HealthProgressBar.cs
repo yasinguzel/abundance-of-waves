@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class HealthProgressBar : MonoBehaviour {
 
 	public Transform healthProgressBar;
-	[SerializeField] private float currentAmound;
-	[SerializeField] private float speed;
+	public float healthValue = GameObject.Find ("Player").GetComponent<HumanPlayer> ().Health;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,12 +14,8 @@ public class HealthProgressBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (currentAmound < 100) {
-			currentAmound += speed * Time.deltaTime;
+		healthValue = GameObject.Find ("Player").GetComponent<HumanPlayer> ().Health;
+		healthProgressBar.GetComponent<Image>().fillAmount = healthValue;
 
-		} else {
-			
-		}
-		healthProgressBar.GetComponent<Image>().fillAmount = currentAmound / 100;
 	}
 }

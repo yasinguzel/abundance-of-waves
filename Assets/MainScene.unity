@@ -569,8 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthProgressBar: {fileID: 828313174}
-  currentAmound: 0
-  speed: 20
+  healthValue: 0
 --- !u!114 &565648914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,8 +944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthProgressBar: {fileID: 234232493}
-  currentAmound: 0
-  speed: 20
+  healthValue: 0
 --- !u!114 &935528641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,8 +1316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthProgressBar: {fileID: 89311681}
-  currentAmound: 0
-  speed: 20
+  healthValue: 0
 --- !u!114 &1476777036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1753,7 +1750,7 @@ MonoBehaviour:
   bullet: {fileID: 114058932488077990, guid: c7eb65eef14124674be8828bd893ced5, type: 2}
   barrel: {fileID: 1002612823}
   spawnDistance: 100
-  Bullet: 100
+  Bullet: 2
 --- !u!114 &2146604321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1765,10 +1762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca70b6e2d4b5545d684c0cb387cebdcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAddValue: 1
+  healthAddValue: 4
   foodAddValue: 1
   waterAddValue: 1
-  bulletAddValue: 1
+  bulletAddValue: 2
 --- !u!114 &2146604322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1780,6 +1777,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e05dfb150cc55419533dd89b90f445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Food: 100
-  Health: 100
-  Water: 20
+  sliders:
+  - {fileID: 828313175}
+  - {fileID: 234232494}
+  - {fileID: 89311682}
+  Food: 6
+  Health: 12
+  Water: 6
+  FoodMAX: 6
+  HealthMAX: 12
+  WaterMAX: 6
