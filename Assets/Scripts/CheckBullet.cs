@@ -5,6 +5,8 @@ using UnityEngine;
 public class CheckBullet : MonoBehaviour {
 
 	public float healt = 5f,minus=1f;
+	public Animator hitAnim;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -20,6 +22,7 @@ public class CheckBullet : MonoBehaviour {
 
 		if (coll.gameObject.CompareTag("Bullet")) {
 			healt -= minus;
+			hitAnim.SetTrigger ("isHitted");
 		}
 	}
 }

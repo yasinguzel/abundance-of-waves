@@ -15,7 +15,7 @@ public class CollectHealth : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		destroyTime -= day;
+		destroyTime -= day/10;
 		Destroy (gameObject, destroyTime);
 	}
 

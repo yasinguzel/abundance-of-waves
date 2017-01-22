@@ -8,9 +8,10 @@ public class PlayerShooter : MonoBehaviour {
 	public Transform barrel;
 	public float spawnDistance = 20;
 	public float Bullet = 100;
+	Animator anim;
 	// Use this for initialization
 	void Start () {
-		
+		anim = GetComponent<Animator> ();
 	}
 
 	// Update is called once per frame
@@ -24,9 +25,11 @@ public class PlayerShooter : MonoBehaviour {
 			Quaternion playerRotation = barrel.transform.rotation;
 
 			if (Bullet!=0) {
+				anim.SetTrigger ("isShot");
 				Vector3 spawnPos = playerPos + playerDirection*spawnDistance;
 				Bullet--;
 				Instantiate(bullet, spawnPos, playerRotation );
+
 			}
 		}
 	}
