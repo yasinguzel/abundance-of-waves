@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\CheckBullet.cs" />
      <Compile Include="Assets\Scripts\CheckCollision.cs" />
      <Compile Include="Assets\Scripts\CollectHealth.cs" />
+     <Compile Include="Assets\Scripts\DayCounter.cs" />
      <Compile Include="Assets\Scripts\Destroy.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\HealthProgressBar.cs" />
@@ -78,10 +79,6 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{AEFA8978-B18E-15BA-1696-BD1BDE562E89}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

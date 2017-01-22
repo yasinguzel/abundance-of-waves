@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4341175238381864}
   - component: {fileID: 212894847473133968}
   - component: {fileID: 114715607227985300}
+  - component: {fileID: 114362983261894006}
   m_Layer: 0
   m_Name: Food
   m_TagString: FoodBox
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114362983261894006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833468976221062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ab331b9748b45828f435721f136f55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114715607227985300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +64,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcdfffc52ca5547e1b2ebdc2a177cb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 1
 --- !u!212 &212894847473133968
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class CollectHealth : MonoBehaviour {
 
-	public float destroyTime = 5f;
+	private float destroyTime = 13f;
 	public GameObject colloctedObject;
+	public int day;
 
 	// Use this for initialization
 	void Start () {
-		
+		day = GameObject.Find ("Canvas/Day/DayText").GetComponent<DayCounter> ().getDay ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		destroyTime -= day;
 		Destroy (gameObject, destroyTime);
 	}
 
@@ -23,5 +25,13 @@ public class CollectHealth : MonoBehaviour {
 			Instantiate (colloctedObject, transform.position, transform.rotation);
 
 		}
+	}
+
+	public float GetDestroyTime(){
+		return destroyTime;
+	}
+
+	public void SetDestroyTime(float time){
+		destroyTime = time;
 	}
 }

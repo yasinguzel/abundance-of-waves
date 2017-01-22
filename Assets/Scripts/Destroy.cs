@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour {
 
-	public int destroyTime = 0;
+
 	// Use this for initialization
 	void Start () {
-		Destroy (gameObject, destroyTime);
+		Destroy (gameObject, 0.3f);
 	}
 	
 	// Update is called once per frame

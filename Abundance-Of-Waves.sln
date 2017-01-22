@@ -1,8 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{ACD88B3E-851F-3B29-730C-543C3DA7EC77}") = "Abundance-Of-Waves", "Assembly-CSharp-firstpass.csproj", "{AEFA8978-B18E-15BA-1696-BD1BDE562E89}"
-EndProject
 Project("{ACD88B3E-851F-3B29-730C-543C3DA7EC77}") = "Abundance-Of-Waves", "Assembly-CSharp.csproj", "{E42D9491-04F7-3272-77EC-70584AEA1C81}"
 EndProject
 Global
@@ -11,10 +9,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AEFA8978-B18E-15BA-1696-BD1BDE562E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEFA8978-B18E-15BA-1696-BD1BDE562E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEFA8978-B18E-15BA-1696-BD1BDE562E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEFA8978-B18E-15BA-1696-BD1BDE562E89}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E42D9491-04F7-3272-77EC-70584AEA1C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E42D9491-04F7-3272-77EC-70584AEA1C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E42D9491-04F7-3272-77EC-70584AEA1C81}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -661,6 +661,7 @@ GameObject:
   - component: {fileID: 765548378}
   - component: {fileID: 765548380}
   - component: {fileID: 765548379}
+  - component: {fileID: 765548381}
   m_Layer: 5
   m_Name: DayText
   m_TagString: Untagged
@@ -725,6 +726,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765548377}
+--- !u!114 &765548381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765548377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f64311d15a9a0406ab3674ac83856966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer: 0
+  day: 0
+  isTime: 0
+  dayTime: 30
 --- !u!1 &828313173
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +896,15 @@ MonoBehaviour:
   - {fileID: 1044935631149884, guid: 9280957c921eb4e358dee384c33f67c0, type: 2}
   - {fileID: 1196327637261416, guid: 6e23a43db240b4befa55e70543eb7381, type: 2}
   boxCount: 6
+  delayBox: 6
+  waveBox: 
+  day1: 
+  day2: 
+  day3: 
+  day4: 
+  day5: 
+  day6: 
+  day7: 
   isUp: 0
 --- !u!1 &935528638
 GameObject:
@@ -1190,6 +1215,15 @@ MonoBehaviour:
   speed: 0.1
   spawn: []
   boxCount: 6
+  delayBox: 3
+  waveBox: 
+  day1: 
+  day2: 
+  day3: 
+  day4: 
+  day5: 
+  day6: 
+  day7: 
   isUp: 0
 --- !u!212 &1294349063
 SpriteRenderer:
@@ -1747,9 +1781,9 @@ MonoBehaviour:
   WaterMAX: 6
   negativeFood: -1
   negativeWater: -1
-  delayFood: 5
-  delayWater: 5
-  dieFood: 5
+  delayFood: 2.5
+  delayWater: 2.5
+  dieFood: 4
   dieWater: 5
   dieFoodM: -1
   dieWaterM: -2

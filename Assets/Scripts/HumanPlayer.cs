@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using DentedPixel;
 
 public class HumanPlayer : MonoBehaviour {
 	  
@@ -86,7 +85,6 @@ public class HumanPlayer : MonoBehaviour {
 
     void Update()
     {
-        ImHuman();
 		if(!isGo)
 			StartCoroutine(timeMinusFood ()); isGo = true;
 		if(!isGoW)
@@ -101,7 +99,6 @@ public class HumanPlayer : MonoBehaviour {
 		for (;;) {
 			yield return new WaitForSeconds(delayFood);
 			SetFood (negativeFood);
-			Debug.Log ("Food: "+Food);
 		}
 
 
@@ -113,7 +110,6 @@ public class HumanPlayer : MonoBehaviour {
 		for (;;) {
 			yield return new WaitForSeconds(delayWater);
 			SetWater (negativeWater);
-			Debug.Log ("Water: "+Water);
 		}
 
 
@@ -121,7 +117,6 @@ public class HumanPlayer : MonoBehaviour {
 
 	IEnumerator dieFoodP(){
 
-		Debug.Log ("food");
 		for (;;) {
 			yield return new WaitForSeconds(dieFood);
 			SetHealth (dieFoodM);
@@ -132,7 +127,6 @@ public class HumanPlayer : MonoBehaviour {
 
 	IEnumerator dieWaterP(){
 
-		Debug.Log ("water");
 		for (;;) {
 			yield return new WaitForSeconds(dieWater);
 			SetHealth (dieWaterM);
@@ -140,27 +134,7 @@ public class HumanPlayer : MonoBehaviour {
 
 
 	}
-
-    void ImHuman()
-    {
-        if (Health < 0) Die();
-        if (Water < 0) Thirsty();
-        if (Food < 0) Starve();
-    }
-
-    void Starve()
-    {
-
-
-
-    }
-
-    void Thirsty()
-    {
-
-
-    }
-
+		
     void Die()
     {
 		Destroy (gameObject, 0);
