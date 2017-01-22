@@ -530,7 +530,6 @@ GameObject:
   - component: {fileID: 565648912}
   - component: {fileID: 565648915}
   - component: {fileID: 565648914}
-  - component: {fileID: 565648913}
   m_Layer: 5
   m_Name: HealthProgress
   m_TagString: Untagged
@@ -557,19 +556,6 @@ RectTransform:
   m_AnchoredPosition: {x: -820, y: 504}
   m_SizeDelta: {x: 280, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &565648913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 565648911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448462c685b9a4d8ca179d163e272d95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthProgressBar: {fileID: 828313174}
-  healthValue: 0
 --- !u!114 &565648914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,7 +891,6 @@ GameObject:
   - component: {fileID: 935528639}
   - component: {fileID: 935528642}
   - component: {fileID: 935528641}
-  - component: {fileID: 935528640}
   m_Layer: 5
   m_Name: FoodProgress
   m_TagString: Untagged
@@ -932,19 +917,6 @@ RectTransform:
   m_AnchoredPosition: {x: -768.3, y: 448.3}
   m_SizeDelta: {x: 280, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &935528640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 935528638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448462c685b9a4d8ca179d163e272d95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthProgressBar: {fileID: 234232493}
-  healthValue: 0
 --- !u!114 &935528641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1277,7 +1249,6 @@ GameObject:
   - component: {fileID: 1476777034}
   - component: {fileID: 1476777037}
   - component: {fileID: 1476777036}
-  - component: {fileID: 1476777035}
   m_Layer: 5
   m_Name: WaterProgress
   m_TagString: Untagged
@@ -1304,19 +1275,6 @@ RectTransform:
   m_AnchoredPosition: {x: -820, y: 390.2}
   m_SizeDelta: {x: 280, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1476777035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1476777033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448462c685b9a4d8ca179d163e272d95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthProgressBar: {fileID: 89311681}
-  healthValue: 0
 --- !u!114 &1476777036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1762,10 +1720,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca70b6e2d4b5545d684c0cb387cebdcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAddValue: 4
+  healthAddValue: 1
   foodAddValue: 1
   waterAddValue: 1
-  bulletAddValue: 2
+  bulletAddValue: 1
 --- !u!114 &2146604322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,3 +1745,13 @@ MonoBehaviour:
   FoodMAX: 6
   HealthMAX: 12
   WaterMAX: 6
+  negativeFood: -1
+  negativeWater: -1
+  delayFood: 5
+  delayWater: 5
+  dieFood: 5
+  dieWater: 5
+  dieFoodM: -1
+  dieWaterM: -2
+  isGo: 0
+  isGoW: 0

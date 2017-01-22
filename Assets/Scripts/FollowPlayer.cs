@@ -15,7 +15,7 @@ public class FollowPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		//değdiği her snde iki
 		Vector2 toTarget = GameObject.Find("Player").transform.position - transform.position;
 		float speed = 1.5f;
 

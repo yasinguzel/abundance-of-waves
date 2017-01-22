@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CheckCollision : MonoBehaviour {
 
-	public float healthAddValue = 1;
-	public float foodAddValue = 1;
-	public float waterAddValue = 1;
-	public float bulletAddValue = 1;
+	public int healthAddValue = 1;
+	public int foodAddValue = 1;
+	public int waterAddValue = 1;
+	public int bulletAddValue = 1;
 
 	HumanPlayer myPlayer;
 
@@ -31,16 +31,18 @@ public class CheckCollision : MonoBehaviour {
 			myPlayer.SetHealth (healthAddValue);
 		}
 		if(coll.gameObject.tag == "FoodBox"){
-			if (GameObject.Find ("Player").GetComponent<HumanPlayer> ().Food < 6) {
+			/*if (GameObject.Find ("Player").GetComponent<HumanPlayer> ().Food < 6) {
 				GameObject.Find ("Player").GetComponent<HumanPlayer> ().Food += foodAddValue;
 				Debug.Log ("Food: " + GameObject.Find ("Player").GetComponent<HumanPlayer> ().Food);
-			}
+			}*/
+			myPlayer.SetFood (foodAddValue);
 		}
 		if(coll.gameObject.tag == "WaterBox"){
-			if (GameObject.Find ("Player").GetComponent<HumanPlayer> ().Water < 6) {
+			/*if (GameObject.Find ("Player").GetComponent<HumanPlayer> ().Water < 6) {
 				GameObject.Find ("Player").GetComponent<HumanPlayer> ().Water += waterAddValue;
 				Debug.Log ("Water: " + GameObject.Find ("Player").GetComponent<HumanPlayer> ().Water);
-			}
+			}*/
+			myPlayer.SetWater(waterAddValue);
 		}
 		if(coll.gameObject.tag == "BulletBox"){
 			

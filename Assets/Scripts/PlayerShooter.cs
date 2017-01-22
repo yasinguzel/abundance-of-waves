@@ -16,7 +16,8 @@ public class PlayerShooter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GameObject.Find ("Canvas/Bullet/BulletText").GetComponent<Text> ().text = Bullet.ToString();
-			
+
+
 		if(Input.GetMouseButtonDown(0)){
 			Vector3 playerPos = barrel.transform.position;
 			Vector3 playerDirection = barrel.transform.forward;
