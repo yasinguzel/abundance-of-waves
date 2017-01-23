@@ -1185,8 +1185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 105.6, y: -3.9}
-  m_SizeDelta: {x: 261.8, y: 49.1}
+  m_AnchoredPosition: {x: 55.3, y: -4.4}
+  m_SizeDelta: {x: 224, y: 42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183674403
 MonoBehaviour:
@@ -1658,8 +1658,9 @@ GameObject:
   - component: {fileID: 1750088702}
   - component: {fileID: 1750088701}
   - component: {fileID: 1750088700}
+  - component: {fileID: 1750088703}
   m_Layer: 5
-  m_Name: Text
+  m_Name: DayText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1695,7 +1696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 0
-  day: 1
   isTime: 0
   dayTime: 30
 --- !u!114 &1750088701
@@ -1737,6 +1737,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750088698}
+--- !u!114 &1750088703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750088698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc479a7e69a14cc58fe313232fa2a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1959858233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +1976,7 @@ MonoBehaviour:
   - {fileID: 234232494}
   - {fileID: 89311682}
   Food: 6
-  Health: 12
+  Health: 21
   Water: 6
   FoodMAX: 6
   HealthMAX: 12

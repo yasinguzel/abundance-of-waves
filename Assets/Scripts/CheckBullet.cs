@@ -6,6 +6,8 @@ public class CheckBullet : MonoBehaviour {
 
 	public float healt = 5f,minus=1f;
 	public Animator hitAnim;
+	public int damage = -1;
+	public bool isEnter = true;
 
 	// Use this for initialization
 	void Start () {
@@ -24,5 +26,14 @@ public class CheckBullet : MonoBehaviour {
 			healt -= minus;
 			hitAnim.SetTrigger ("isHitted");
 		}
+
 	}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject.CompareTag("Player")) {
+			GameObject.Find ("Player").GetComponent<HumanPlayer> ().SetHealth (damage);
+		}
+
+	}
+		
 }

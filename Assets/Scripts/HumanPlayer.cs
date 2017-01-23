@@ -139,7 +139,7 @@ public class HumanPlayer : MonoBehaviour {
 		
     void Die()
     {
-		SceneManager.LoadScene(2);
+		SceneManager.LoadScene(3);
 
 
     }

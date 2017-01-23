@@ -121,6 +121,9 @@ MonoBehaviour:
   healt: 2
   minus: 1
   hitAnim: {fileID: 0}
+  damage: -3
+  damageDelay: 3
+  isEnter: 1
 --- !u!212 &212547801531042586
 SpriteRenderer:
   m_ObjectHideFlags: 1
