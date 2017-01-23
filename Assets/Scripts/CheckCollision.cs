@@ -24,30 +24,20 @@ public class CheckCollision : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll){
 		if(coll.gameObject.tag == "HealthBox"){
-			/*if (GameObject.Find ("Player").GetComponent<HumanPlayer> ().Health < 12) {
-				GameObject.Find ("Player").GetComponent<HumanPlayer> ().Health += healthAddValue;
-				Debug.Log ("Health: " + GameObject.Find ("Player").GetComponent<HumanPlayer> ().Health);
-			}*/
+
 			myPlayer.SetHealth (healthAddValue);
 		}
 		if(coll.gameObject.tag == "FoodBox"){
-			/*if (GameObject.Find ("Player").GetComponent<HumanPlayer> ().Food < 6) {
-				GameObject.Find ("Player").GetComponent<HumanPlayer> ().Food += foodAddValue;
-				Debug.Log ("Food: " + GameObject.Find ("Player").GetComponent<HumanPlayer> ().Food);
-			}*/
+
 			myPlayer.SetFood (foodAddValue);
 		}
 		if(coll.gameObject.tag == "WaterBox"){
-			/*if (GameObject.Find ("Player").GetComponent<HumanPlayer> ().Water < 6) {
-				GameObject.Find ("Player").GetComponent<HumanPlayer> ().Water += waterAddValue;
-				Debug.Log ("Water: " + GameObject.Find ("Player").GetComponent<HumanPlayer> ().Water);
-			}*/
+
 			myPlayer.SetWater(waterAddValue);
 		}
 		if(coll.gameObject.tag == "BulletBox"){
 			
 			GameObject.Find ("Player").GetComponent<PlayerShooter> ().Bullet += bulletAddValue;
-			Debug.Log ("Bullet: " + GameObject.Find ("Player").GetComponent<PlayerShooter> ().Bullet);
 
 		}
 

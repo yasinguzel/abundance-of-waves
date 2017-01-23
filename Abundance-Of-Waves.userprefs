@@ -1,13 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CheckBullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Wave.cs">
     <Files>
-      <File FileName="Assets/Scripts/DayCounter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CollectHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Wave.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/HumanPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerShooter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CheckBullet.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HumanPlayer.cs" Line="73" Column="14" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="30" Column="35" />
+      <File FileName="Assets/Scripts/Wave.cs" Line="44" Column="39" />
+      <File FileName="Assets/Scripts/CheckCollision.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

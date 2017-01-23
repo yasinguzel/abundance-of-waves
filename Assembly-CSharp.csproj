@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\PlayerShooter.cs" />
+     <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\Wave.cs" />
      <Compile Include="Assets\Scripts\ggj.cs" />
  <Reference Include="UnityEngine.Analytics">

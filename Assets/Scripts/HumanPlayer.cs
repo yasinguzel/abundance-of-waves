@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HumanPlayer : MonoBehaviour {
 	  
@@ -70,7 +71,6 @@ public class HumanPlayer : MonoBehaviour {
 		//6 sn 1 azalacak
 		if (this.Water + _value <= 0) {
 			Water = 0;
-			Debug.Log ("water giriş");
 			StartCoroutine(dieWaterP());
 		}
 		else if (this.Water + _value >= WaterMAX) {
@@ -119,7 +119,8 @@ public class HumanPlayer : MonoBehaviour {
 
 		for (;;) {
 			yield return new WaitForSeconds(dieFood);
-			SetHealth (dieFoodM);
+			if(Food == 0)
+				SetHealth (dieFoodM);
 		}
 
 
@@ -129,7 +130,8 @@ public class HumanPlayer : MonoBehaviour {
 
 		for (;;) {
 			yield return new WaitForSeconds(dieWater);
-			SetHealth (dieWaterM);
+			if(Water == 0)
+				SetHealth (dieWaterM);
 		}
 
 
@@ -137,7 +139,7 @@ public class HumanPlayer : MonoBehaviour {
 		
     void Die()
     {
-		Destroy (gameObject, 0);
+		SceneManager.LoadScene(2);
 
 
     }
